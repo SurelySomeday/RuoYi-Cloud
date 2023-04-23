@@ -14,28 +14,28 @@ cp ../sql/ry_config_20220929.sql ./mysql/db
 
 # copy html
 echo "begin copy html "
-cp -r ../ruoyi-ui/dist/** ./nginx/html/dist
+cp -r ../learn-drive-ui/dist/** ./nginx/html/dist
 
 
 # copy jar
-echo "begin copy ruoyi-gateway "
-cp ../ruoyi-gateway/target/ruoyi-gateway.jar ./ruoyi/gateway/jar
+echo "begin copy learn-drive-gateway "
+cp ../learn-drive-gateway/target/learn-drive-gateway.jar ./learn-drive/gateway/jar
 
-echo "begin copy ruoyi-auth "
-cp ../ruoyi-auth/target/ruoyi-auth.jar ./ruoyi/auth/jar
+echo "begin copy learn-drive-auth "
+cp ../learn-drive-auth/target/learn-drive-auth.jar ./learn-drive/auth/jar
 
-echo "begin copy ruoyi-visual "
-cp ../ruoyi-visual/ruoyi-monitor/target/ruoyi-visual-monitor.jar  ./ruoyi/visual/monitor/jar
+echo "begin copy learn-drive-visual "
+cp ../learn-drive-visual/learn-drive-monitor/target/learn-drive-visual-monitor.jar  ./learn-drive/visual/monitor/jar
 
-echo "begin copy ruoyi-modules-system "
-cp ../ruoyi-modules/ruoyi-system/target/ruoyi-modules-system.jar ./ruoyi/modules/system/jar
+echo "begin copy learn-drive-modules-system "
+cp ../learn-drive-modules/learn-drive-system/target/learn-drive-modules-system.jar ./learn-drive/modules/system/jar
 
-echo "begin copy ruoyi-modules-file "
-cp ../ruoyi-modules/ruoyi-file/target/ruoyi-modules-file.jar ./ruoyi/modules/file/jar
+echo "begin copy learn-drive-modules-file "
+cp ../learn-drive-modules/learn-drive-file/target/learn-drive-modules-file.jar ./learn-drive/modules/file/jar
 
-echo "begin copy ruoyi-modules-job "
-cp ../ruoyi-modules/ruoyi-job/target/ruoyi-modules-job.jar ./ruoyi/modules/job/jar
+echo "begin copy learn-drive-modules-job "
+cp ../learn-drive-modules/learn-drive-job/target/learn-drive-modules-job.jar ./learn-drive/modules/job/jar
 
-echo "begin copy ruoyi-modules-gen "
-cp ../ruoyi-modules/ruoyi-gen/target/ruoyi-modules-gen.jar ./ruoyi/modules/gen/jar
+echo "begin copy learn-drive-modules-gen "
+cp ../learn-drive-modules/learn-drive-gen/learn-drive/learn-drive-modules-gen.jar ./learn-drive/modules/gen/jar
 
