@@ -1,0 +1,3 @@
+com.aerozhonghuan.system.api.factory.RemoteUserFallbackFactory
+com.aerozhonghuan.system.api.factory.RemoteLogFallbackFactory
+com.aerozhonghuan.system.api.factory.RemoteFileFallbackFactory

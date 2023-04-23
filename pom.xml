@@ -4,16 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ruoyi</groupId>
-    <artifactId>ruoyi</artifactId>
+    <groupId>com.aerozhonghuan</groupId>
+    <artifactId>learn-drive</artifactId>
     <version>3.6.2</version>
 
-    <name>ruoyi</name>
-    <url>http://www.ruoyi.vip</url>
-    <description>若依微服务系统</description>
+    <name>learn-drive</name>
+    <url>https://www.aerozhonghuan.com/</url>
+    <description>学驾微服务系统-基于若依</description>
 
     <properties>
-        <ruoyi.version>3.6.2</ruoyi.version>
+        <learn-drive.version>3.6.2</learn-drive.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -87,6 +87,12 @@
                 <version>${swagger.core.version}</version>
             </dependency>
 
+            <!-- SpringBoot Seata -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+            </dependency>
+
             <!-- 验证码 -->
             <dependency>
                 <groupId>pro.fessional</groupId>
@@ -145,77 +151,70 @@
 
             <!-- 核心模块 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-core</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.aerozhonghuan</groupId>
+                <artifactId>learn-drive-common-core</artifactId>
+                <version>${learn-drive.version}</version>
             </dependency>
 
             <!-- 接口模块 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-swagger</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.aerozhonghuan</groupId>
+                <artifactId>learn-drive-common-swagger</artifactId>
+                <version>${learn-drive.version}</version>
             </dependency>
 
             <!-- 安全模块 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-security</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.aerozhonghuan</groupId>
+                <artifactId>learn-drive-common-security</artifactId>
+                <version>${learn-drive.version}</version>
             </dependency>
 
             <!-- 权限范围 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-datascope</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.aerozhonghuan</groupId>
+                <artifactId>learn-drive-common-datascope</artifactId>
+                <version>${learn-drive.version}</version>
             </dependency>
 
             <!-- 多数据源 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-datasource</artifactId>
-                <version>${ruoyi.version}</version>
-            </dependency>
-
-            <!-- 分布式事务 -->
-            <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-seata</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.aerozhonghuan</groupId>
+                <artifactId>learn-drive-common-datasource</artifactId>
+                <version>${learn-drive.version}</version>
             </dependency>
 
             <!-- 日志记录 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-log</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.aerozhonghuan</groupId>
+                <artifactId>learn-drive-common-log</artifactId>
+                <version>${learn-drive.version}</version>
             </dependency>
 
             <!-- 缓存服务 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common-redis</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.aerozhonghuan</groupId>
+                <artifactId>learn-drive-common-redis</artifactId>
+                <version>${learn-drive.version}</version>
             </dependency>
 
             <!-- 系统接口 -->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-api-system</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.aerozhonghuan</groupId>
+                <artifactId>learn-drive-api-system</artifactId>
+                <version>${learn-drive.version}</version>
             </dependency>
 
         </dependencies>
     </dependencyManagement>
 
     <modules>
-        <module>ruoyi-auth</module>
-        <module>ruoyi-gateway</module>
-        <module>ruoyi-visual</module>
-        <module>ruoyi-modules</module>
-        <module>ruoyi-api</module>
-        <module>ruoyi-common</module>
+        <module>learn-drive-auth</module>
+        <module>learn-drive-gateway</module>
+        <module>learn-drive-visual</module>
+        <module>learn-drive-modules</module>
+        <module>learn-drive-api</module>
+        <module>learn-drive-common</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,0 +1,3 @@
+# com.aerozhonghuan.common.swagger.config.SwaggerAutoConfiguration
+# com.aerozhonghuan.common.swagger.config.SwaggerWebConfiguration
+# com.aerozhonghuan.common.swagger.config.SwaggerBeanPostProcessor

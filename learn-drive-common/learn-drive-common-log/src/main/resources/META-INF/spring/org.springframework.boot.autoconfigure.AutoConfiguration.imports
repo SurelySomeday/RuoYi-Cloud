@@ -1,0 +1,2 @@
+com.aerozhonghuan.common.log.service.AsyncLogService
+com.aerozhonghuan.common.log.aspect.LogAspect
