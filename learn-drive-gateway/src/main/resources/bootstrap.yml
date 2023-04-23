@@ -6,16 +6,18 @@ server:
 spring: 
   application:
     # 应用名称
-    name: ruoyi-gateway
+    name: learn-drive-gateway
   profiles:
     # 环境配置
     active: dev
   cloud:
     nacos:
       discovery:
+        namespace: dev
         # 服务注册地址
         server-addr: 127.0.0.1:8848
       config:
+        namespace: dev
         # 配置中心地址
         server-addr: 127.0.0.1:8848
         # 配置文件格式
@@ -34,7 +36,7 @@ spring:
         ds1:
           nacos:
             server-addr: 127.0.0.1:8848
-            dataId: sentinel-ruoyi-gateway
+            dataId: sentinel-learn-drive-gateway
             groupId: DEFAULT_GROUP
             data-type: json
             rule-type: gw-flow

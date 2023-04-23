@@ -6,7 +6,7 @@ server:
 spring: 
   application:
     # 应用名称
-    name: ruoyi-auth
+    name: learn-drive-auth
   profiles:
     # 环境配置
     active: dev
@@ -15,7 +15,9 @@ spring:
       discovery:
         # 服务注册地址
         server-addr: 127.0.0.1:8848
+        namespace: dev
       config:
+        namespace: dev
         # 配置中心地址
         server-addr: 127.0.0.1:8848
         # 配置文件格式
